@@ -34,7 +34,7 @@ $result=mysqli_query($conn,$query);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leaderboard</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style1.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
    
@@ -42,38 +42,42 @@ $result=mysqli_query($conn,$query);
 </head>
 <body>
 <header id="header">
-                        <div id="nav">
-                                <div class="dropdown-bars">
-                                                <i class="fa fa-bars" id="bars" aria-hidden="true"></i> 
-                                    <div class="dropdown-content-bars">
-                                                <a href="http://localhost/team-b(paymatrix)/login-signup-profile/profile.php#">Profile</a>
-                                                <a href="#">Settings</a>
-                                                <a href="http://localhost/team-b(paymatrix)/login-signup-profile/logout.php">Logout</a>
-                                        </div>
-                                    </div> 
-                                    <a href="http://localhost/team-B(paymatrix)/practice/practice.html"><img src="Codeforlifelogo.jpg" class="img" alt="Sorry!image cannot be loaded"/></a>
-                                    <ul class="list">
-                                    <li class="li-item"><a class="nav-links" href="http://localhost/team-B(paymatrix)/practice/practice.html">practice</a></li>
-                                    <li class="li-item"><a class="nav-links"href="http://localhost/team-b(paymatrix)/compete/compete.html">compete</a></li>
-                                    <li class="li-item"><a class="nav-links"href="http://localhost/team-B(paymatrix)/leaderboard/index1.html">leaderboard</a></li>
-                                    </ul>
-                        </div>
-                            <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
-                            <input type="text" id="search" placeholder="Search">
-                            <i class="fa fa-comment-o" id="message" aria-hidden="true"></i>
-                            <i class="fa fa-bell-o"    id="comment" aria-hidden="true"></i>
-                            <i class="fa fa-user-o" id="user" aria-hidden="true"></i>
-                            <div class="dropdown">
-                                <button class="username">username 
-                                <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                        <a href="http://localhost/team-b(paymatrix)/login-signup-profile/profile.php#">Profile</a>
-                                        <a href="#">Settings</a>
-                                        <a href="http://localhost/team-b(paymatrix)/login-signup-profile/logout.php">Logout</a>
-                                </div>
-                            </div> 
-                    </header>
+                <div class="dropdown-bars">
+                        <i class="fa fa-bars" id="bars" aria-hidden="true"></i> 
+                    <div class="dropdown-content-bars">
+                                <a href="/team-b(paymatrix)/login-signup-profile/profile.php#">Profile</a>
+                                <a href="#">Settings</a>
+                                <a href="/team-b(paymatrix)/login-signup-profile/logout.php">Logout</a>
+                    </div>
+                </div> 
+                <a href="http://www.google.com"><img class="img" src="codeforlifelogo.jpg" alt="Sorry!image cannot be loaded"></a>
+                <p class="title">CODING STAR</p>
+                <ul class="list">
+                        <li class="li-item"><a class="nav-links" href="/team-B(paymatrix)/practice/practice.html">practice </a></li>
+                        <li class="li-item"><a class="nav-links"href="/team-b(paymatrix)/compete/compete.html">compete </a></li>
+                        <li class="li-item"><a class="nav-links"href="/team-B(paymatrix)/leaderboard/leaderboard.php">leaderboard</a></li>
+                </ul>
+                <div class="search">
+                    <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
+                    <input type="text" id="search-bar" placeholder="Search">
+                </div>
+                <div class="icons">
+                    <i class="fa fa-comment-o" id="message" aria-hidden="true"></i>
+                    <i class="fa fa-bell-o"    id="comment" aria-hidden="true"></i>
+                    <i class="fa fa-user-o" id="user" aria-hidden="true"></i>
+                </div>
+                <div class="dropdown">
+                    <button class="username">username
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      
+                            <a href="/team-b(paymatrix)/login-signup-profile/profile.php#">Profile</a>
+                            <a href="#">Settings</a>
+                            <a href="/team-b(paymatrix)/login-signup-profile/logout.php">Logout</a>
+                    </div>
+                </div> 
+        </header>
    
         <h1> <b>  Leaderboard </b></h1>
    
