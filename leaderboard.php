@@ -1,8 +1,10 @@
 <?php
 
-$conn= mysqli_connect('localhost','root','bhanu2105','leaderboard');
-$query= 'select * from records';
+$conn= mysqli_connect('localhost','root','bhanu2105','hackerrank');
+$query= 'select  * from records';
+
 $result=mysqli_query($conn,$query);
+
 
 $results_per_page=10;
 $number_of_results=mysqli_num_rows($result);
@@ -21,7 +23,7 @@ $prev=$page-1;
 $next=$page+1;
 
 $this_page_first_result=($page-1) * $results_per_page;
-$query='select * from records limit '.$this_page_first_result.','.$results_per_page;
+$query='select  * from records   limit '.$this_page_first_result.','.$results_per_page;
 $result=mysqli_query($conn,$query);
 
 
@@ -50,7 +52,7 @@ $result=mysqli_query($conn,$query);
                                 <a href="/team-b(paymatrix)/login-signup-profile/logout.php">Logout</a>
                     </div>
                 </div> 
-                <a href="http://www.google.com"><img class="img" src="codeforlifelogo.jpg" alt="Sorry!image cannot be loaded"></a>
+                <a id="im" href="http://www.google.com"><img class="img" src="codeforlifelogo.jpg" alt="Sorry!image cannot be loaded"></a>
                 <p class="title">CODING STAR</p>
                 <ul class="list">
                         <li class="li-item"><a class="nav-links" href="/team-B(paymatrix)/practice/practice.html">practice </a></li>
